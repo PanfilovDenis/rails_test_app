@@ -1,0 +1,10 @@
+<h1>Editing person</h1>
+
+<%= render 'form' %>
+
+<% link_to 'unpublish', post_change_state_path(@post, event: :unpublish), method: :put %>
+<% link_to 'publish', post_change_state_path(@post, event: :publish), method: :put %>
+<% link_to 'delete', post_change_state_path(@post, event: :delete), method: :put %>
+
+<%= link_to 'Show', @person %> |
+<%= link_to 'Back', people_path %>
