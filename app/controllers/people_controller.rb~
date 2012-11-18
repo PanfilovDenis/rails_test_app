@@ -6,7 +6,7 @@ class PeopleController < ApplicationController
       @person.fire_state_event(params[:event])
       @person.save
     end
-    redirect_to people_path
+    redirect_to people_url
   end
 
   # GET /people
