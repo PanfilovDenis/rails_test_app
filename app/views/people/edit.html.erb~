@@ -2,9 +2,10 @@
 
 <%= render 'form' %>
 
-<% link_to 'unpublish', people_change_the_state_path(@person, event: :unpublish), method: :put %>
-<% link_to 'publish', people_change_the_state_path(@person, event: :publish), method: :put %>
-<% link_to 'delete', people_change_the_state_path(@person, event: :delete), method: :put %>
+<%= link_to 'unpublish', person_change_state_path(@person, event: :unpublish), method: :put %>
+<%= link_to 'publish', person_change_state_path(@person, event: :publish), method: :put %>
+<%= link_to 'delete', person_change_state_path(@person, event: :delete), method: :put %>
+
 
 <%= link_to 'Show', @person %> |
 <%= link_to 'Back', people_path %>
