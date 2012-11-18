@@ -8,6 +8,7 @@ gem 'rails', '3.2.9'
 gem 'sqlite3'
 gem 'therubyracer'
 gem 'state_machine'
+gem 'simplecov', :require => false, :group => :test
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
