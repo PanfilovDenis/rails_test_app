@@ -6,7 +6,7 @@ class PeopleControllerTest < ActionController::TestCase
   end
 
   test "should change state" do
-    put :change_state, person_id: @person, event: "unpublish"
+    put :change_state, person_id: @person, event: "delete"
     assert_redirected_to people_path    
   end
 
