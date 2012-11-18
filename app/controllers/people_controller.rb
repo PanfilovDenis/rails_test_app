@@ -1,7 +1,7 @@
 class PeopleController < ApplicationController
   
-  def change_the_state
-    @person = Person.find(params[:id])
+  def change_state
+    @person = Person.find(params[:person_id])
     if @person
       @person.fire_state_event(params[:event])
       @person.save

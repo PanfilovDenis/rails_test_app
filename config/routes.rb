@@ -1,5 +1,7 @@
 RailsTestApp::Application.routes.draw do
-  resources :people
+  resources :people do
+   put :change_state
+  end
 
 
   # The priority is based upon order of creation:
