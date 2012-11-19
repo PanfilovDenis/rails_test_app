@@ -3,8 +3,7 @@ class Person < ActiveRecord::Base
   full_name_regex_format = /([a-zA-Z])/   #Если у вас проблема, и вы ее решили с помощью regex, то у вас теперь две проблемы)
   validates :full_name, :presence => true, 
                         :length => {:maximum => 40}, 
-                        :format => {:with => full_name_regex_format},
-                        :uniqueness => true
+                        :format => {:with => full_name_regex_format}
 
   state_machine :state, :initial => :published do
   

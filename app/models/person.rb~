@@ -5,6 +5,7 @@ class Person < ActiveRecord::Base
                         :length => {:maximum => 40}, 
                         :format => {:with => full_name_regex_format},
                         :uniqueness => true
+
   state_machine :state, :initial => :published do
   
     event :unpublish do

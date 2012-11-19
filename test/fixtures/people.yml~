@@ -3,9 +3,11 @@
 one:
   full_name: MyString
   birth_date: 2012-11-17
-  gender: MyString
+  gender: male
+  state: published
 
 two:
   full_name: MyString
   birth_date: 2012-11-17
-  gender: MyString
+  gender: female
+  state: unpublished
